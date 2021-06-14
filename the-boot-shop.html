@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<head>
+    <style>
+        body{
+            background-color: rgb(22, 17, 17);
+        }
+        .b-1{
+            color: aliceblue;
+        }
+    </style>
+</head>
+<body onload="bhead()">
+    <h1 id="b1" class="b-1 b-s1">THE BOOT SHOP</h1>
+<script>
+    function bhead(){
+        var time= new Date()
+        if(time.getSeconds()%2 ==1){
+            document.getElementById("b1").style.color = "red"
+        }
+        else{document.getElementById("b1").style.color= "aliceblue"}
+        var t = setTimeout(bhead,1000)
+    }
+</script>
+</body>
+</html>
