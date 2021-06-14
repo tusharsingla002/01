@@ -1,14 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <head>
     <style>
-        body{
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
             align-items: center;
             border: 2px solid white;
             min-height: 740px;
@@ -18,24 +24,74 @@
             margin: auto;
             margin-top: 5px;
             min-width: 86%;
-        
+
         }
-        h1{
-            text-align:center ;
+
+        .head1 {
+            text-align: center;
             background-color: aliceblue;
             padding-top: 3px;
             padding-bottom: 3px;
         }
+
+        .head2 {
+            color: aliceblue;
+            text-align: center;
+            margin-top: -12px;
+
+        }
+
+        .head-3 {
+            color: aliceblue;
+            text-align: center;
+            border: 2px solid aliceblue;
+            padding: 2px;
+            
+            max-width: 100px;
+            min-width: 300px;
+
+            margin: auto;
+            margin-top: 10px;
+
+        }
+
+        .head-4 {
+            color: aliceblue;
+            border: 2px solid aliceblue;
+            text-align: center;
+            padding: 2px;
+            
+            margin: auto;
+            max-width: 100px;
+            min-width: 300px;
+            margin-top: 10px;
+           
+        }
+        
+        [class*="col-"] {
+            width: 100%;
+        }
+
+        @media only screen and (min-width: 600px) {}
+
+        @media only screen and (min-width: 768px){
+            .head-3{float: left;margin-left: 5%; min-width: 35%;margin-top: 25px;}
+            .head-4{float: left;margin-left: 20%;min-width: 35%;margin-top: 25px;}
+        }
     </style>
 </head>
+
 <body onload="headf()">
-    <h1 id="head1" >The smart city
+    <h1 id="head1" class="head1">The Smart City
     </h1>
+    <h1 id="head2" class="head2">MANSA</h1>
     <script src="index.js"></script>
 </body>
+
 </html>
 
+<head>
+    <h2 id="head3" class="head-3 head-s-3">The Boot <br> Shop</h1>
 
-
-
-
+        <h2 id="head4" class="head-4 head-s-4">The <br> stationeries</h2>
+</head>
